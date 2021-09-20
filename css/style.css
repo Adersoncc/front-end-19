@@ -1,0 +1,166 @@
+/*===== RESET BROWSER =====*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*===== STYLE CSS =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+  margin: 10vh 5vh 20vh;
+}
+
+.topheader {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12vh;
+  position: relative;
+  animation: sk;
+}
+
+.page-title {
+  color: rgb(236, 54, 78);
+  animation: slidein 4s;
+}
+
+.page-title:hover {
+  transform: skew(25deg);
+  filter: brightness(120%);
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  80% {
+    font-size: 300%;
+    margin-right: 25%;
+    widht: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 30%;
+  }
+}
+
+.page-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fantasma {
+  /*==PARAGRAFO DO HEADER==*/
+  animation: fantasma 3s 3;
+}
+
+@keyframes fantasma {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    transform: translatey(-20px);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.login {
+  width: 100px;
+  height: 15px;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: -3rem;
+  right: 0.5rem;
+  align-items: center;
+}
+
+.user-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-header {
+  background-color: rgb(117, 114, 114);
+  color: rgb(255, 255, 255);
+  height: 1.8rem;
+  width: 3rem;
+  align-items: baseline;
+  transition: background-color, 0.5s, color, 0.7s;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(117, 114, 114);
+}
+
+/*===== SECTION =====*/
+
+.videos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7vh;
+}
+
+/*===== DIV's=====*/
+
+.video {
+  width: 50vh;
+  height: fit-content;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.video:hover {
+  transform: scale(1.15);
+  filter: brightness(120%);
+}
+
+/*===== IMG =====*/
+
+.thumbnail {
+  width: 100%;
+}
+
+/*===== H1 =====*/
+
+.video-title {
+  margin: 8px 0 12px;
+  color: white;
+}
+
+/*===== SPAN =====*/
+
+.video-views {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  display: block;
+}
+
+.designer {
+  width: 100%;
+  color: white;
+}
+
+/*===ÁDERSON C. COSTA*/
